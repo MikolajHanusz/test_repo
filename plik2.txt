@@ -3,3 +3,4 @@ Asystent
 gui
 Zmiana8
 Zmiana9
+Zmiana12
