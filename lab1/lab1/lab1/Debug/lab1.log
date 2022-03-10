@@ -1,3 +1,1 @@
-﻿  lab1_dom.cpp
-C:\Users\Mikołaj\Desktop\lab1_kosz\lab1\lab1\lab1_dom.cpp(88,12): warning C4244: "argument": konwersja z "time_t" do "unsigned int", możliwa utrata danych
-  lab1.vcxproj -> C:\Users\Mikołaj\Desktop\lab1_kosz\lab1\Debug\lab1.exe
+﻿  lab1.vcxproj -> C:\Users\Mikołaj\Desktop\lab1\lab1\Debug\lab1.exe
