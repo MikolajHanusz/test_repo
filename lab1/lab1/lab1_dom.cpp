@@ -33,6 +33,7 @@ ostream& operator<<(ostream& str,przedmiot const &pr)
 przedmiot& skrzynia(przedmiot* prz,int roz)
 {
 	int losrz = rand() % 300;
+	cerr << losrz << endl;
 	int los;
 	if (0 <= losrz && losrz < 200)
 	{	
@@ -85,6 +86,7 @@ przedmiot& skrzynia(przedmiot* prz,int roz)
 int main()
 {
 	srand(time(NULL));
+	rand();//bez tego liczby ros³y monotonicznie w przewidywalny sposób przy czêstych nastêpuj¹cych po sobie uruchomieniach programu
 	const int size = 7;
 	przedmiot prze[size];
 	wpisanie(prze[0], "Kij ale ze sznurkiem", "luk", "zwykly", "lucznik", 0.5, 1, 1);
