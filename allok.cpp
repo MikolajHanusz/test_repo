@@ -1,5 +1,6 @@
 #include <iostream>
-
+//https://cpp0x.pl/dokumentacja/standard-C/strncat/315
+//https://cpp0x.pl/dokumentacja/standard-C/strlen/354
 enum class typ
 {
 	asd, asdy
