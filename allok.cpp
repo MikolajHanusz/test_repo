@@ -29,6 +29,31 @@ void dekod(short k,int &w,Plec &p, StanCywilny &s)
 	p = (Plec)(tPlec);
 	s = (StanCywilny)(tStan);
 }
+void zapis(Osoba*o,FILE*f)
+{
+	for (int i = 0; i < rozmiar; i++)
+		fprintf(f, "%s, %s, %u\n", o[i].imie, o[i].nazwisko, kod(o[i]));
+}
+
+void odczyt(FILE* f,int i, Osoba&o)
+{
+	if (i > rozmiar) throw std::domain_error("");
+	char im[50] = {}, naz[50] = {};
+	int kod=0;
+	for(int j = 0; j < i; j++)
+	{
+		fscanf(f, "%s, ", im);
+		fscanf(f, "%s, ", naz);
+		fscanf(f, "%u ", &kod);
+		
+	}
+	im[strlen(im) - 1] = 0;
+	naz[strlen(naz) - 1] = 0;
+	strcpy(o.imie, im);
+	strcpy(o.nazwisko, naz);
+	dekod(kod, o.wiek, o.plec, o.stan);
+}
+
 enum class typ
 {
 	asd, asdy
